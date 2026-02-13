@@ -120,6 +120,7 @@ BOARD_AVB_RECOVERY_ADD_HASH_FOOTER_ARGS += \
     --prop com.android.build.boot.security_patch:$(PLATFORM_SECURITY_PATCH)
 
 # TWRP
+TW_FORCE_KEYMASTER_VER := true
 TW_THEME := portrait_hdpi
 TW_EXTRA_LANGUAGES := true
 TW_SCREEN_BLANK_ON_BOOT := true
