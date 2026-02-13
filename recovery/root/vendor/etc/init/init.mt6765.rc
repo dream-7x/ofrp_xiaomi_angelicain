@@ -2,6 +2,14 @@ on init
     setprop sys.usb.ffs.aio_compat 1
     setprop sys.usb.configfs 1
 
+    chown system system /sys/class/leds/flashlight/trigger
+    chown system system /sys/class/leds/flashlight/brightness
+    chown system system /sys/class/leds/flashlight/max_brightness
+
+    chown system system /sys/class/leds/torch-light0/trigger
+    chown system system /sys/class/leds/torch-light0/brightness
+    chown system system /sys/class/leds/torch-light0/max_brightness
+
     export LD_LIBRARY_PATH /system/lib64:/vendor/lib64:/vendor/lib64/hw
 
 on property:ro.crypto.state=encrypted && property:ro.crypto.type=file
