@@ -18,7 +18,7 @@ cd ~/OrangeFox_sync/sync/
 ---------------
 **Clone this repo**
 ```bash
-cd ~fox_12.1
+cd ~/fox_12.1
 git clone https://github.com/dream-7x/ofrp_xiaomi_angelicain.git device/xiaomi/angelicain
 ```
 
